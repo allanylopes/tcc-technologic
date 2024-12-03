@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologic</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/icone site.ico">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/technologic_logo.svg" alt="Technologic"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+          aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+            <a class="nav-item nav-link" id="about-menu" href="#">Empresa</a>
+            <a class="nav-item nav-link" id="services-menu" href="#">Especialidades</a>
+            <a class="nav-item nav-link" id="team-menu" href="#">Produtos</a>
+            <a class="nav-item nav-link" id="portfolio-menu" href="blog.html">Blog</a>
+            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
+
+            <!-- tirar classe d-none -->
+
+            <div class="carousel-caption d-md-block">
+              <h2>Quer ter mais autonomia na vida?</h5>
+                <p>Conte com a Xluminous, um produto que você precisa.</p>
+                <a href="#team-area" class="main-btn">Ver produtos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de software">
+            <div class="carousel-caption d-md-block">
+              <h2>Está querendo ver como funciona?</h5>
+                <p>Entre em contato com a nossa equipe que está pronta para lhe atender.</p>
+                <a href="#contact-area" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.png" class="d-block w-100" alt="Manutenção em software">
+            <div class="carousel-caption d-md-block">
+              <h2>Xluminous garante soluções</h5>
+                <p>Somos altamente qualificados para resolver seu problema.</p>
+                <a href="#contact-area" id="contact-menu"class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Sobre a empresa -->
+      <section id="empresa">
+      <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Sobre a Technologic</h3>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="img/agencia.jpg" alt="Agência hDC">
+            </div>
+            <div class="col-md-6">
+              <h3 class="about-title">Uma empresa que pensa no futuro</h3>
+              <p>Nossos produtos é cuidadosamente projetado para atender às necessidades e garantir sua segurança.</p>
+              <p>
+                Os produtos da Technologic são desenvolvidos com um foco adaptado às necessidades de cada cliente e ao propósito específico de acessibilidade e segurança. Para pessoas com deficiência auditiva, nossa solução de alerta contra incêndios é projetada para oferecer segurança aprimorada e acessível.
+                
+                Esse sistema inteligente utiliza uma combinação de luzes intermitentes de alta intensidade e vibrações, permitindo que alertas de incêndio sejam percebidos instantaneamente em qualquer ambiente. Essa abordagem inclusiva e sensível às necessidades dos usuários garante que todos possam responder rapidamente a emergências, proporcionando tranquilidade e proteção.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Serviços da empresa -->
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Nossas especialidades</h3>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-mobile-alt"></i>
+              <h4>Aplicativos Nativos</h4>
+              <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-paint-brush"></i>
+              <h4>Design Criativo</h4>
+              <p>Nossos designers são especializados em UI/UX criando interfaces intuitivas e atraentes que melhoram a experiência do usuário e atendem às necessidades.
+              </p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-hands-helping"></i>
+              <h4>Suporte</h4>
+              <p>Você sempre terá alguem da equipe disponível para suporte, em diferentes plataformas. (chat, email,
+                whatsapp)</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-server"></i>
+              <h4>Aplicativos</h4>
+              <p>Intuitivos e user-friendly com rápido tempo de resposta do aplicativo móvel ao desktop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Dados da empresa -->
+      <div id="data-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleA"></div>
+              <p>Projetos entregues</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleB"></div>
+              <p>Clientes Satisfeitos</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleC"></div>
+              <p>Colaboradores</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleD"></div>
+              <p>Solicitações Atendidas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Time -->
+      <div id="team-area">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h3 class="main-title">Nossos produtos</h3>
+            </div>
+            
+            <!-- Produto 1 -->
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card">
+                <img src="img/profile1.png" class="card-img-top" alt="Imagem de Perfil 1">
+                <div class="card-body">
+                  <h5 class="card-title">Lâmpada</h5>
+                  <p class="card-text" style="color: black;">RGB para alertas</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Produto 2 -->
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card">
+                <img src="img/profile2.png" class="card-img-top" alt="Imagem de Perfil 2">
+                <div class="card-body">
+                  <h5 class="card-title">Pulseira</h5>
+                  <p class="card-text" style="color: black;">com alerta luminoso e vibração</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Produto 3 -->
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card">
+                <img src="img/profile3.png" class="card-img-top" alt="Imagem de Perfil 3">
+                <div class="card-body">
+                  <h5 class="card-title">Pulseira</h5>
+                  <p class="card-text" style="color: black;">com vibração</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Trabalhe conosco -->
+      <div id="apply-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 apply-box" id="company-img"></div>
+            <div class="col-md-6 apply-box" id="pattern-img">
+              <h4>Desafios sobre a deficiência auditiva</h4>
+              <p>Como convivier e ter a maior autonomia possível?
+              </p>
+              <p>Promover a autonomia de pessoas com deficiência auditiva significa criar ferramentas e ambientes acessíveis que permitem sua independência, comunicação eficaz e plena integração em todas as esferas da vida.
+              </p>
+              <p>Clique no botão abaixo e confira o nosso blog.</p>
+              <a href="blog.html" class="main-btn" id="apply-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfólio -->
+      <!-- <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça nossos projetos</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="dev-btn">Aplicativo desktop</button>
+              <button class="main-btn filter-btn" id="dsg-btn">Aplicativo mobile</button>
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!-- Newsletter -->
+      <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine nossa lista de e-mails, e receba nossas atualizações</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu e-mail">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
+        </div>
+      </div>
+      <!-- Call to Action -->
+      <div id="call-area">
+        <div class="container">
+          <div class="row">
+            <p>Deseja saber mais sobre os nossos produtos?</p>
+            <button class="main-btn" id="call-btn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em contato conosco</h3>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-tile">Ligue para:</span> (13)98755-1929</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-tile">Envie um email:</span> technologic.creators@gmail.com</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-tile">Venha fazer uma visita:</span> Rua das Flores, 124- Bairro Jardim Primavera, Cidade: Registro-SP</p>
+          </div>
+          <div class="col-md-6" id="msg-box">
+            <p>Ou nos deixe uma mensagem:</p>
+          </div>
+          <div class="col-md-6" id="contact-form">
+            <form action="">
+              <input type="text" class="form-control" placeholder="E-mail" name="email">
+              <input type="text" class="form-control" placeholder="Assunto" name="subject">
+              <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+              <input type="submit" class="main-btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Desenvolvido por <a href="https://www.technologic.creators.com.br" target="_blank">Tecnologic</a> &copy; 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
