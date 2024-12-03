@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +31,7 @@
 <body>
   <header>
     <div class="container" id="nav-container">
+
       <!-- add essa class -->
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <a class="navbar-brand" href="index.html">
@@ -46,7 +46,7 @@
             <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
             <a class="nav-item nav-link" id="about-menu" href="#">Empresa</a>
             <a class="nav-item nav-link" id="services-menu" href="#">Especialidades</a>
-            <a class="nav-item nav-link" id="team-menu" href="#">Produtos</a>
+            <a class="nav-item nav-link" id="team-menu" href="#products-section">Produtos</a>
             <a class="nav-item nav-link" id="portfolio-menu" href="blog.html">Blog</a>
             <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
           </div>
@@ -56,6 +56,7 @@
   </header>
   <main>
     <div class="container-fluid">
+
       <!-- slider -->
       <div id="mainSlider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -68,11 +69,10 @@
             <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
 
             <!-- tirar classe d-none -->
-
             <div class="carousel-caption d-md-block">
-              <h2>Quer ter mais autonomia na vida?</h5>
+              <h2>Quer ter mais autonomia na vida?</h2>
                 <p>Conte com a Xluminous, um produto que você precisa.</p>
-                <a href="#team-area" class="main-btn">Ver produtos</a>
+                <a href="#products-section" class="main-btn">Ver produtos</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -101,6 +101,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
       <!-- Sobre a empresa -->
       <section id="empresa">
       <div id="about-area">
@@ -124,6 +125,7 @@
         </div>
       </div>
     </section>
+
       <!-- Serviços da empresa -->
       <div id="services-area">
         <div class="container">
@@ -134,7 +136,7 @@
             <div class="col-md-4 service-box">
               <i class="fas fa-mobile-alt"></i>
               <h4>Aplicativos Nativos</h4>
-              <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+              <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos. Intuitivos e user-friendly com rápido tempo de resposta do aplicativo móvel ao desktop.</p>
             </div>
             <div class="col-md-4 service-box">
               <i class="fas fa-paint-brush"></i>
@@ -148,15 +150,9 @@
               <p>Você sempre terá alguem da equipe disponível para suporte, em diferentes plataformas. (chat, email,
                 whatsapp)</p>
             </div>
-            <div class="col-md-4 service-box">
-              <i class="fas fa-server"></i>
-              <h4>Aplicativos</h4>
-              <p>Intuitivos e user-friendly com rápido tempo de resposta do aplicativo móvel ao desktop.</p>
-            </div>
           </div>
         </div>
       </div>
-
 
       <!-- Dados da empresa -->
       <div id="data-area">
@@ -181,51 +177,56 @@
           </div>
         </div>
       </div>
-      <!-- Time -->
-      <div id="team-area">
+
+      <!-- Seção produtos -->
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <h3 class="main-title">Nossos produtos</h3>
+              <h3 class="main-title">Entenda como funciona Xluminous</h3>
             </div>
             
-            <!-- Produto 1 -->
-            <div class="col-md-3 d-flex justify-content-center">
-              <div class="card">
-                <img src="img/profile1.png" class="card-img-top" alt="Imagem de Perfil 1">
-                <div class="card-body">
-                  <h5 class="card-title">Lâmpada</h5>
-                  <p class="card-text" style="color: black;">RGB para alertas</p>
-                </div>
-              </div>
+          <!-- Vídeo -->
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-8 d-flex justify-content-center">
+              <iframe 
+              width="1700" 
+              height="575" 
+              src="https://www.youtube.com/embed/Adde_WEU_98?si=iwUFjatCQAbEoYt2&controls=0&autoplay=1&mute=1&loop=1&playlist=Adde_WEU_98" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
             </div>
-            
-            <!-- Produto 2 -->
-            <div class="col-md-3 d-flex justify-content-center">
-              <div class="card">
-                <img src="img/profile2.png" class="card-img-top" alt="Imagem de Perfil 2">
-                <div class="card-body">
-                  <h5 class="card-title">Pulseira</h5>
-                  <p class="card-text" style="color: black;">com alerta luminoso e vibração</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Produto 3 -->
-            <div class="col-md-3 d-flex justify-content-center">
-              <div class="card">
-                <img src="img/profile3.png" class="card-img-top" alt="Imagem de Perfil 3">
-                <div class="card-body">
-                  <h5 class="card-title">Pulseira</h5>
-                  <p class="card-text" style="color: black;">com vibração</p>
-                </div>
-              </div>
-            </div>
-            
           </div>
         </div>
-      </div>
-      
+                  <!-- Produtos -->
+        <div id="products-section" class="py-5">
+          <div class="col-12 text-center">
+            <h3 class="main-title">Produtos</h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-3 d-flex justify-content-center mb-4">
+              <div class="card product-card">
+                <img src="img/profile1.png" class="card-img-top" alt="Imagem de Lâmpada RGB">
+                <div class="card-body">
+                  <h5 class="card-title product-title">Lâmpada</h5>
+                  <p class="card-text product-text" style="color: black;">RGB para alertas</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center mb-4">
+              <div class="card product-card">
+                <img src="img/profile2.png" class="card-img-top" alt="Imagem de Fone">
+                <div class="card-body">
+                  <h5 class="card-title product-title">Pulseira</h5>
+                  <p class="card-text product-text" style="color: black;">Com vibração e alerta lumonoso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
       
       <!-- Trabalhe conosco -->
       <div id="apply-area">
@@ -244,39 +245,7 @@
           </div>
         </div>
       </div>
-      <!-- Portfólio -->
-      <!-- <div id="portfolio-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="main-title">Conheça nossos projetos</h3>
-            </div>
-            <div class="col-md-12" id="filter-btn-box">
-              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
-              <button class="main-btn filter-btn" id="dev-btn">Aplicativo desktop</button>
-              <button class="main-btn filter-btn" id="dsg-btn">Aplicativo mobile</button>
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
-            </div>
-          </div>
-        </div>
-      </div>-->
+
       <!-- Newsletter -->
       <div id="news-area">
         <div class="container">
@@ -301,6 +270,7 @@
       </div>
     </div>
   </main>
+
   <!-- Rodapé -->
   <footer>
     <div id="contact-area">
@@ -345,8 +315,8 @@
       </div>
     </div>
   </footer>
+
   <!-- Scripts do projeto -->
   <script src="js/scripts.js"></script>
 </body>
-
 </html>

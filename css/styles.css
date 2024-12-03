@@ -612,4 +612,72 @@ header, .navbar {
     margin-bottom: 0;
   }
 
+
+  /* Estilização da seção de produtos */
+#products-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.products-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #FFF;
+}
+
+/* Estilização dos cards de produtos */
+.product-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.product-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Estilização do iframe de vídeo */
+#products-section iframe {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes de layout responsivo */
+@media (max-width: 768px) {
+  #products-section .row.align-items-center {
+    flex-direction: column;
+  }
+
+  #products-section iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+  }
+}
+
 }
