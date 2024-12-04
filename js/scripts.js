@@ -34,7 +34,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 254);
+      var value = Math.round(circle.value() * 54);
       circle.setText(value);
 
     }
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 32);
+      var value = Math.round(circle.value() * 15);
       circle.setText(value);
 
     }
@@ -74,7 +74,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 5423);
+      var value = Math.round(circle.value() * 230);
       circle.setText(value);
 
     }
@@ -153,7 +153,7 @@ $( document ).ready(function() {
   let bannerSection = $('#mainSlider');
   let aboutSection = $('#about-area');
   let servicesSection = $('#services-area');
-  let teamSection = $('#team-area');
+  let teamSection = $('#products-section');
   let portfolioSection = $('#portfolio-area');
   let contactSection = $('#contact-area');
 

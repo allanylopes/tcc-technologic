@@ -4,10 +4,6 @@ body {
   background-color: #253245;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .row {
   margin: 0;
 }
@@ -83,7 +79,7 @@ header, .navbar {
 }
 
 .main-btn {
-  background-color: #253245;
+  background-color: #1a7993;
   color: #FFF;
   text-transform: uppercase;
   width: 200px;
@@ -98,11 +94,11 @@ header, .navbar {
   text-decoration: none;
   color: #FFF;
   background-color: transparent;
-  border-color: #253245;
+  border-color: #1a7993;
 }
 
 .carousel-indicators .active {
-  background-color: #253245;
+  background-color: #1a7993;
 }
 
 /* Sobre a empresa */
