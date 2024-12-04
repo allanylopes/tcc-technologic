@@ -14,7 +14,7 @@ body {
 
 p, li {
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Barra de navegação */
@@ -72,7 +72,7 @@ header, .navbar {
 }
 
 #mainSlider .carousel-caption p {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 300;
   margin-bottom: 100px;
   color: #FFF;
